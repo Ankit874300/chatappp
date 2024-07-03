@@ -114,6 +114,7 @@ const Singup = () => {
       localStorage.setItem("userInfo", JSON.stringify(data));
       setPicLoading(false);
       history.push("/chat");
+       window.location.reload();
     } catch (error) {
       toast({
         title: "Error Occured!",
